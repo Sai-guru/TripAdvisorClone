@@ -1,0 +1,443 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* Navbar Style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.navbar__menu{
+    display: none;
+    display: flex;
+}
+.navbar__left{
+    display: flex;
+    text-align: left;
+    font-size: 13px;
+
+}
+.navbar__left img{
+    width: 20%;
+    height: 65%;
+    padding-top: 13px;
+    padding-right: 2px;
+}
+.navbar__middle{
+   display: flex;
+
+}
+.navbar__right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar__right p{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.navbar__right__rupees{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+.navbar__right__rupees h4{
+    border-left: solid 1px grey;
+    padding-left: 10px;
+}
+
+.navbar__middle h4{
+  padding : 15px;
+}
+.navbar__middle h4:hover{
+    border-radius: 5px;
+    border-bottom: solid 2px silver;
+    transition: all 0.3s;
+    box-shadow: 0 4px 5px rgba(255, 245, 238, 0.6);
+}
+.navbar__right p:hover{
+    opacity: 0.5;
+}
+/* Section-2 */
+.section2 h1{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.section2__menubar{
+    font-weight: bold;
+   gap: 20px;
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.section2__menubar p{
+    border-bottom: solid 2px transparent;
+}
+.section2__menubar p:hover{
+    border-bottom: solid 2px black;
+   
+}
+.section2__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height : 70px;
+    border: solid 1px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.section2__search__search input{
+    font-size: 15px;
+   
+    border: none;
+    background-color: transparent;
+}
+.section2__search__search input:focus{
+    outline: none;
+}
+.section2__search h4{
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Section-3 */
+
+.section3__img img{
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 50%;
+}
+.section3__img{
+    position: relative;
+    opacity:0.9;
+    border-radius: 10px;
+}
+.section3__text{
+    width: 40%;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 50%;
+    left: 5%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section3__winner h4{
+    background: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.section3__winner h4:hover{
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+/* Section4 */
+.section4__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 25%;
+    flex-grow: 1;
+    flex-basis: 20%;
+    animation-name: zoom;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Section5 */
+.section5{
+    margin-top: 100px;
+}
+.section5__card{
+    display: flex;
+    gap: 20px;
+}
+.section5__card .card h2{
+    text-align: center;
+}
+/* Explore Section */
+.explore{
+    background-color: #faf1ed;
+    padding: 10px;
+}
+.explore h2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.explore__card{
+    display: flex;
+    gap: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.explore__card .card img{
+    width: 100%;
+    height: 70%;
+}
+/* section6 */
+.container2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.section6__trip{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.section6__trip .card h2{
+    text-align: center;
+}
+/* section7 */
+.section7__destination{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.section7__destination .card h2{
+    text-align: center;
+}
+
+/* footer section */
+.footer{
+    background-color: #faf1ed;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 20px;
+}
+.footer__section1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__section1__info1{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer__section1__info__s1 p:hover{
+    width: fit-content;
+    border-bottom: solid 1px black;
+}
+.footer__section1__info__s2 p:hover{
+    width: fit-content;
+    border-bottom: solid 1px black;
+}
+.footer__section1__info2 p{
+    font-size: 14px;
+}
+.footer__section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__section2__copyright{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer__section2__copyright img{
+    width: 45px;
+    height: 45px;
+}
+.footer__section2__socialmedia{
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+/* Media Queries */
+/* Tab View */
+@media screen and (max-width:1100px){
+    body{
+        font-size: 15px;
+    }
+    .section2__search__search input{
+        width: 200px;
+        font-size: 15px;
+    }
+    .container1,.container2,.explore,.footer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .explore{
+        padding: 1px;
+    }
+    .navbar__right p{
+        font-size: 13px;
+    }
+    .explore{
+        padding-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    .navbar{
+        justify-content: start;
+        gap: 35%;
+        align-items: center;
+    }
+    .navbar__menu{
+        display: block;
+    }
+    
+    .navbar__middle, .navbar__right, .section2 h1{
+        display: none;
+    }
+    .section2{
+        margin-top: 30px;
+    }
+    .section2__search{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 0px;
+        border-radius: 20px;
+    }
+    .section2__search h4{
+        width: 90%;
+        margin-left: 2%;
+        text-align: center;
+    }
+    .section2__search__search{
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .explore{
+        padding-bottom: 70px;
+    }
+    .footer__section1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__section1__info__s2{
+        display: none;
+    }
+    .footer__section1__info__s1{
+        font-size: 10px;
+    }
+    .footer__section1__info2 p{
+        font-size: 10px;
+    }
+}
+
+/* Phone View */
+@media screen and (max-width:500px){
+    body{
+        font-size: 10px;
+    }
+    .navbar__left h1{
+        font-size: 15px;
+    }
+    .section2__menubar{
+        padding: 0;
+    }
+    .section2__menubar p{
+        font-size: 10px;
+        padding: 0px;
+    }
+    .section2__search__search input{
+        font-size: 10px;
+        width: 85%;
+    }
+    .navbar__middle{
+        margin-right: 10px;
+    }
+    .navbar__right__rupees{
+        padding-left: 10px;
+    }
+    .navbar__right p{
+        font-size: 10px;
+    }
+    .explore__card .card h4{
+        margin-bottom: 60px;
+    }
+    .section4__card{
+        display: flex;
+        gap: 20px;
+    }
+    .footer__section1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__section1__info__s2{
+        display: none;
+    }
+    .footer__section1__info__s1{
+        font-size: 10px;
+    }
+    .footer__section1__info2 p{
+        font-size: 10px;
+    }
+    .explore h2{
+        margin-left: 10px;
+    }
+    .explore__card{
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section3__text{
+        top:25%;
+        left: 10%;
+    }
+    .card{
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+    .section2__menubar{
+        display: flex;
+        gap: 8px;
+    }
+}
